@@ -1,0 +1,123 @@
+1. Insert Contact
+-Flowchart Steps:
+-Start
+-Display Insert Panel
+-Input Name
+-User enters the contact name.
+-Input Number
+-User enters the contact number.
+-Validate Inputs
+-Check if the name and number fields are not empty.
+-Decision: Are inputs valid?
+              -Yes: Proceed to the next step.
+              -No: Display error message and prompt for re-entry.
+-Add to Contacts Lists
+-Add the entered name to the names list.
+-Add the entered number to the numbers list.
+-Confirm Addition
+-Display a message indicating successful addition.
+-Return to Main Menu
+End
+
+2. Search Contact
+-Flowchart Steps:
+-Start
+-Display Search Panel
+-Input Number to Search
+-User enters the number to search.
+-Validate Input
+-Ensure the input is a valid integer.
+-Decision: Is input valid?
+            -Yes: Proceed.
+             -No: Display error and prompt for re-entry.
+-Search in Numbers List
+-Iterate through the numbers list to find a match.
+-Check if Contact is Found
+-Decision: Contact found?
+               -Yes: Retrieve and display the corresponding name.
+                -No: Display "Contact not found."
+-Return to Main Menu
+End
+
+3. Display All Contacts
+-Flowchart Steps:
+-Start
+-Retrieve All Contacts
+-Access the names and numbers lists.
+-Check if Contacts Exist
+-Decision: Are there any contacts?
+        -Yes: Proceed to display.
+        -No: Display "No contacts to display."
+-Display Contacts
+-Iterate through the lists and display each contact in the displayArea.
+-Return to Main Menu
+End
+
+4. Delete Contact
+-Flowchart Steps:
+-Start
+-Display Delete Panel
+-Input Name or Number to Delete
+-User enters the identifier for the contact.
+-Validate Input
+-Ensure input is not empty.
+-Decision: Is input valid?
+        -Yes: Proceed.
+         -No: Display error and prompt for re-entry.
+-Search for Contact
+-Iterate through names and numbers to find a match.
+-Check if Contact is Found
+-Decision: Contact found?
+          -Yes: Remove from both names and numbers lists.
+          -No: Display "Contact not found."
+-Confirm Deletion
+-Display a message indicating successful deletion.
+-Return to Main Menu
+End
+
+5. Update Contact
+-Flowchart Steps:
+-Start
+-Display Update Panel
+-Input Name or Number to Update
+-User enters the identifier for the contact.
+-Input New Name
+-User enters the new name.
+-Input New Number
+-User enters the new number.
+-Validate Inputs
+-Ensure all fields are filled and valid.
+-Decision: Are inputs valid?
+            -Yes: Proceed.
+               -No: Display error and prompt for re-entry.
+-Search for Contact
+-Iterate through names and numbers to find a match.
+-Check if Contact is Found
+-Decision: Contact found?
+            -Yes: Update the name and number in the lists.
+             -No: Display "Contact not found."
+-Confirm Update
+-Display a message indicating successful update.
+-Return to Main Menu
+End
+
+6. Sort Contacts
+-Flowchart Steps:
+-Start
+-Display Sort Panel
+-Choose Sort Criteria
+-User selects to sort by Name or Number.
+-Perform Sorting
+-Decision: Sort by?
+              -Name:
+-Sort the names list alphabetically.
+-Rearrange the numbers list to maintain correspondence.
+               -Number:
+-Sort the numbers list numerically.
+-Rearrange the names list to maintain correspondence.
+-Confirm Sorting
+-Display a message indicating successful sorting.
+-Optionally Display Sorted Contacts
+-Optionally call displayAllContacts() to show the sorted list.
+-Return to Main Menu
+End
